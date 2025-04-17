@@ -27,7 +27,7 @@ function Weather() {
   };
 
   return (
-    <div className="bg-black p-14">
+    <div className=" bg-black p-14">
       <div className="bg-green-400 p-5 rounded-xl">
         <div>
           <h1 className="text-2xl font-medium">Weather Report</h1>
