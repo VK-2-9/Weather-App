@@ -33,7 +33,7 @@ function Input() {
   };
 
   return (
-    <div className="flex  bg-transparent   border-blue-600 border-2 rounded-full  " >
+    <div className="flex  bg-transparent justify-between  border-blue-600 border-2 rounded-full  " >
       
         <input
           type="text"
