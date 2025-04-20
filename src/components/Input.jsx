@@ -23,8 +23,6 @@ function Input() {
         setHumidity(success.data.main.humidity)
         setWindSpd(success.data.wind.speed)
         setResult(true)
-        console.log(success.data);
-        console.log(result)
       })
       .catch(function (errmsg) {
         setResult(false)
@@ -33,12 +31,12 @@ function Input() {
   };
 
   return (
-    <div className="flex  bg-transparent justify-between  border-blue-600 border-2 rounded-full  " >
+    <div className="flex  bg-transparent justify-between  border-blue-600 border-[4px] rounded-full  " >
       
         <input
           type="text"
           placeholder="City name"
-          className=" px-2 bg-transparent text-blue-800 font-medium placeholder:text-blue-800  focus:outline-none"
+          className=" px-6  bg-transparent text-xl text-blue-800 font-medium placeholder:text-blue-800 placeholder:font-bold placeholder:text-xl focus:outline-none"
           value={ecity}
           onChange={handleCityInput}
         >
@@ -46,7 +44,8 @@ function Input() {
         </input>
         <button
           className=" p-1 text-blue-800 text-3xl px-4"
-          onClick={getWeather}
+          onClick={getWeather} 
+
         >
          ⌕
         </button>

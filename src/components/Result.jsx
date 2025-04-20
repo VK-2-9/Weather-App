@@ -7,7 +7,7 @@ function Result(){
 
     return(
         <div>
-{            result=="start"?<p ></p>:<p>City not found</p>
+{            result=="start"?<p ></p>:<p className="font-medium text-3xl my-7 ">City not found</p>
 }        </div>
     )
 }
